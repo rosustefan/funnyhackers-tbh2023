@@ -1,6 +1,5 @@
-# Secrets/Conf
-configuration.py
-backend/configuration.py
+# Configuration
+config/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
