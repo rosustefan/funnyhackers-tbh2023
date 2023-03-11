@@ -1,5 +1,5 @@
 import gradio as gr
-import Backend.call_openai as be
+import backend.call_openai as be
 
 def input_whitepaper(whitepaper_url):
     """
