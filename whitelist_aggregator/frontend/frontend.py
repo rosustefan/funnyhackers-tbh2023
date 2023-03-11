@@ -1,5 +1,6 @@
 import gradio as gr
-import backend.call_openai as be
+from whitelist_aggregator.backend import call_openai as BE
+
 
 def input_whitepaper(whitepaper_url):
     """
@@ -8,7 +9,7 @@ def input_whitepaper(whitepaper_url):
     """
     # print(whitepaper_url)
     # call summarize function and return summary
-    summary = be.write_summary(whitepaper_url)
+    summary = BE.write_summary(whitepaper_url)
     return f"These are the keypoints: \n {summary}"
 
 def compare_whitepapers(*args):

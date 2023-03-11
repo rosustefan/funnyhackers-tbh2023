@@ -1,5 +1,5 @@
 import openai
-from . import configuration
+from whitelist_aggregator.config import configuration
 
 
 openai.api_key = configuration.API_KEY
