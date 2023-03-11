@@ -1,5 +1,5 @@
 import gradio as gr
-
+import Backend.call_openai as be
 
 def input_whitepaper(whitepaper_url):
     """
@@ -8,7 +8,7 @@ def input_whitepaper(whitepaper_url):
     """
     # print(whitepaper_url)
     # call summarize function and return summary
-    summary = ""
+    summary = be.write_summary(whitepaper_url)
     return f"These are the keypoints: \n {summary}"
 
 def compare_whitepapers(*args):
