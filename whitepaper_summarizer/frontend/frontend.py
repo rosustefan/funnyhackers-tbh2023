@@ -1,5 +1,5 @@
 import gradio as gr
-from whitelist_aggregator.backend import call_openai
+from whitepaper_summarizer.backend import call_openai
 
 
 def input_whitepaper(whitepaper_url):
