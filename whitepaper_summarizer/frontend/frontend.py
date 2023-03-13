@@ -16,8 +16,9 @@ def input_whitepaper(whitepaper_url):
 def compare_whitepapers(*args):
     pass
 
+
 demo = gr.Interface(fn=input_whitepaper,
-                    inputs="text",  
+                    inputs="text",
                     outputs="text")
 
 # print(demo)
